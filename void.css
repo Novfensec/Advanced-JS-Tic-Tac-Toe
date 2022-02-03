@@ -1,0 +1,91 @@
+:root{
+    --color:chartreuse;
+}
+*{
+    font-family: sans-serif;
+    color:var(--color);
+}
+body{
+    background:black;
+    animation-name:appear;
+    animation-duration:2s;
+}
+@keyframes appear{
+    from{
+        opacity:0;
+    }to{
+        opacity:100;
+    }
+}
+.container {
+    width: 16rem;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
+}
+.npx {
+    width: 22rem;
+    margin: auto;
+}
+.cell {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid var(--color);
+    float: left;
+    font-size: 4.5rem;
+}
+.a,
+.b,
+.c {
+    border-top: none;
+}
+.a,
+.d,
+.g {
+    border-left: none;
+}
+.c,
+.f,
+.i {
+    border-right: none;
+}
+.g,
+.h,
+.i {
+    border-bottom: none;
+}
+.hgy {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+.bgy {
+    text-align: center;
+}
+button {
+    font-size: 1.75rem;
+    border: 0.1rem solid var(--color);
+    background: transparent;
+    border-radius: 0.35rem;
+    width: 8rem;
+    padding: 0.3rem;
+}
+.w-msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    text-align: center;
+}
+.show {
+    display: flex;
+}
+.strx {
+    display: none;
+}
