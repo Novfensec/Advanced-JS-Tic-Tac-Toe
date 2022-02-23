@@ -17,6 +17,15 @@ body{
         opacity:100;
     }
 }
+@keyframes display{
+    0%{
+        color:black;
+    }50%{
+        color:white;
+    }100%{
+        color:chartreuse;
+    }
+}
 .container {
     width: 16rem;
     height: auto;
@@ -33,6 +42,10 @@ body{
     border: 0.1rem solid var(--color);
     float: left;
     font-size: 4.5rem;
+}
+.cell:hover{
+    animation-name:display;
+    animation-duration:.5s;
 }
 .a,
 .b,
@@ -69,6 +82,10 @@ button {
     width: 8rem;
     padding: 0.3rem;
 }
+button:hover{
+    animation-name:display;
+    animation-duration:0.5s;
+}
 .w-msg {
     display: none;
     position: fixed;
@@ -85,6 +102,8 @@ button {
 }
 .show {
     display: flex;
+    animation-name:appear;
+    animation-duration:.25s;
 }
 .strx {
     display: none;
